@@ -77,8 +77,14 @@ WSGI_APPLICATION = 'kingdom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'treasure',
+        'USER': 'lishimin',
+        'PASSWORD': 'iamking',
+        'PORT': '5432',
+        'HOST': '172.18.0.4',
     }
 }
 
